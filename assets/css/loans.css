@@ -2,7 +2,6 @@
   padding: 30px 10px;
 }
 
-/* Loan Categories Styles */
 .loan-categories {
   display: flex;
   justify-content: space-between;
@@ -76,7 +75,6 @@
   margin-top: 10px;
 }
 
-/* Loans Overview Styles */
 .loans-overview-title {
   font-size: 22px;
   font-weight: 600;

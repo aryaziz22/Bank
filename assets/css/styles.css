@@ -650,7 +650,6 @@ body {
   text-align: center;
 }
 
-/* Layout Sections */
 .content-row {
   display: flex;
   gap: 30px;
