@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankku Dashboard</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lato:wght@400;600&family=Mont:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="logo-container">
+                <img src="../assets/images/img_iconfindervector6509473792_1.png" alt="Bankku Logo" width="36"
+                    height="36">
+                <span class="logo-text">Bankku.</span>
+            </div>
+
+            <nav>
+                <div class="nav-item active">
+                    <img src="../assets/images/img_vector_1.svg" alt="Dashboard Icon" width="25" height="25">
+                    <a class="nav-text" href="Dashboard.html">Dashboard</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_glyph.svg" alt="Transactions Icon" width="25" height="25">
+                    <a class="nav-text" href="Transactions.html">Transactions</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_user_3_1.svg" alt="Accounts Icon" width="25" height="25">
+                    <a class="nav-text" href="Accounts.html">Accounts</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_group_25x25.svg" alt="Investments Icon" width="25" height="25">
+                    <a class="nav-text" href="Investments.html">Investments</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_creditcard_1.svg" alt="Credit Cards Icon" width="26" height="26">
+                    <a class="nav-text" href="CreditCards.html">Credit Cards</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_loan_1.svg" alt="Loans Icon" width="25" height="25">
+                    <a class="nav-text" href="Loans.html">Loans</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_service_1.svg" alt="Services Icon" width="25" height="25">
+                    <a class="nav-text" href="Services.html">Services</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_econometrics_1.svg" alt="My Privileges Icon" width="25" height="25">
+                    <a class="nav-text" href="Privileges.html">My Privileges</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_vector_25x25.svg" alt="Setting Icon" width="25" height="25">
+                    <a class="nav-text" href="Setting.html">Setting</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <!-- Burger Menu -->
+                <div class="burger" id="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="overlay" id="overlay"></div>
+                <h1 class="page-title">Overview</h1>
+
+                <div class="search-bar">
+                    <img src="../assets/images/img_magnifyingglass_1.svg" alt="Search Icon" width="20" height="20">
+                    <input type="text" class="search-input" placeholder="Search for something">
+                </div>
+
+                <div class="user-actions">
+                    <button class="icon-button">
+                        <img src="../assets/images/img_group_3.svg" alt="Notifications" width="50" height="50">
+                    </button>
+                    <button class="icon-button">
+                        <img src="../assets/images/img_group_4.svg" alt="Settings" width="50" height="50">
+                    </button>
+                    <img src="../assets/images/img_pexelschristinamorillo1181690_1.png" alt="User Avatar"
+                        class="user-avatar">
+                </div>
+            </div>
+
+            <!-- Cards Section -->
+            <div class="content-row">
+                <!-- My Cards -->
+                <div class="cards-wrapper">
+                    <div class="section-header">
+                        <h2 class="section-title">My Cards</h2>
+                        <span class="see-all">See All</span>
+                    </div>
+                    <div class="cards-inner" style="display: flex; gap: 30px;">
+                        <!-- Blue Card -->
+                        <div class="card blue-card">
+                            <div class="card-label">Balance</div>
+                            <div class="card-balance">$5,756</div>
+                            <img src="../assets/images/img_chipcard.png" alt="Card Chip" class="card-chip">
+                            <div class="card-holder-info" style="margin-top: 30px;">
+                                <div class="card-label">CARD HOLDER</div>
+                                <div class="card-value">Eddy Cusuma</div>
+                            </div>
+                            <div style="position: absolute; top: 94px; right: 26px;">
+                                <div class="card-label">VALID THRU</div>
+                                <div class="card-value">12/22</div>
+                            </div>
+                            <div class="card-number-container">
+                                <div class="card-number">3778 **** **** 1234</div>
+                                <img src="../assets/images/img_group_17.svg" alt="Mastercard Logo" class="card-logo">
+                            </div>
+                        </div>
+
+                        <!-- White Card -->
+                        <div class="card white-card">
+                            <div class="card-label">Balance</div>
+                            <div class="card-balance">$5,756</div>
+                            <img src="../assets/images/img_chipcard.png" alt="Card Chip" class="card-chip">
+                            <div class="card-holder-info" style="margin-top: 30px;">
+                                <div class="card-label">CARD HOLDER</div>
+                                <div class="card-value">Eddy Cusuma</div>
+                            </div>
+                            <div style="position: absolute; top: 90px; right: 26px;">
+                                <div class="card-label">VALID THRU</div>
+                                <div class="card-value">12/22</div>
+                            </div>
+                            <div class="card-number-container">
+                                <div class="card-number">3778 **** **** 1234</div>
+                                <img src="../assets/images/img_group_17_30x44.svg" alt="Visa Logo" class="card-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Transactions -->
+                <div class="transactions-container">
+                    <div class="section-header">
+                        <h2 class="section-title">Recent Transaction</h2>
+                    </div>
+                    <div class="item-container">
+                        <div class="transaction-item">
+                            <div class="transaction-icon icon-yellow">
+                                <img src="../assets/images/img_iconfinderbusinessfinancemoney132784281_1.svg"
+                                    alt="Card Icon" width="28" height="28">
+                            </div>
+                            <div class="transaction-details">
+                                <div class="transaction-title">Deposit from my Card</div>
+                                <div class="transaction-date">28 January 2021</div>
+                            </div>
+                            <div class="transaction-amount amount-negative">-$850</div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon icon-blue">
+                                <img src="../assets/images/img_iconfinderpaypalpaymentpay5340264_1.svg"
+                                    alt="Paypal Icon" width="28" height="28">
+                            </div>
+                            <div class="transaction-details">
+                                <div class="transaction-title">Deposit Paypal</div>
+                                <div class="transaction-date">25 January 2021</div>
+                            </div>
+                            <div class="transaction-amount amount-positive">+$2,500</div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon icon-teal">
+                                <img src="../assets/images/img_iconfinder64753731_1.svg" alt="User Icon" width="28"
+                                    height="28">
+                            </div>
+                            <div class="transaction-details">
+                                <div class="transaction-title">Jemi Wilson</div>
+                                <div class="transaction-date">21 January 2021</div>
+                            </div>
+                            <div class="transaction-amount amount-positive">+$5,400</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Baris 2: Weekly Activity + Expense Statistics -->
+            <div class="content-row">
+                <div class="activity-container">
+                    <h2 class="section-title">Weekly Activity</h2>
+                    <div class="activity">
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <div class="legend-color legend-deposit"></div>
+                                <span class="legend-text">Deposit</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color legend-withdraw"></div>
+                                <span class="legend-text">Withdraw</span>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="activityChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="statistics-container">
+                    <h2 class="section-title">Expense Statistics</h2>
+                    <div class="pie-chart">
+                        <img src="../assets/images/img_group.svg" alt="Expense Statistics Chart" width="269"
+                            height="269">
+                        <div class="pie-segment segment-entertainment">30%<br>Entertainment</div>
+                        <div class="pie-segment segment-investment">20%<br>Investment</div>
+                        <div class="pie-segment segment-bill">15%<br>Bill Expense</div>
+                        <div class="pie-segment segment-others">35%<br>Others</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Baris 3: Quick Transfer + Balance History -->
+            <div class="content-row">
+                <div class="transfer-container">
+                    <h2 class="section-title">Quick Transfer</h2>
+                    <div class="transfer">
+                        <div class="contacts-container" style="position: relative;">
+                            <!-- (Contact Items) -->
+                            <div class="contact">
+                                <img src="../assets/images/img_pexelsjuliavolk5273755_1.png" alt="Livia Bator"
+                                    class="contact-avatar">
+                                <div class="contact-name">Livia Bator</div>
+                                <div class="contact-title">CEO</div>
+                            </div>
+                            <div class="contact">
+                                <img src="../assets/images/img_marcelstraussuctoqajdyunsplash_1.png" alt="Randy Press"
+                                    class="contact-avatar">
+                                <div class="contact-name">Randy Press</div>
+                                <div class="contact-title">Director</div>
+                            </div>
+                            <div class="contact">
+                                <img src="../assets/images/img_emanuelmincajyv069cqub8unsplash_1.png" alt="Workman"
+                                    class="contact-avatar">
+                                <div class="contact-name">Workman</div>
+                                <div class="contact-title">Designer</div>
+                            </div>
+                            <button class="next-button">
+                                <img src="../assets/images/img_group_56.svg" alt="Next" width="50" height="50">
+                            </button>
+                        </div>
+
+                        <div class="amount-input-container">
+                            <div class="amount-label">Write Amount</div>
+                            <div class="amount-input-wrapper">
+                                <input type="text" class="amount-input" value="525.50">
+                                <button class="send-button">
+                                    Send
+                                    <img src="../assets/images/img_vector.svg" alt="Send" class="send-icon" width="26"
+                                        height="22">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="history-container">
+                    <h2 class="section-title">Balance History</h2>
+                    <div class="balance">
+                        <div class="line-chart">
+                            <!-- <div class="chart-y-axis">
+                                <div class="y-axis-label">800</div>
+                                <div class="y-axis-label">600</div>
+                                <div class="y-axis-label">400</div>
+                                <div class="y-axis-label">200</div>
+                                <div class="y-axis-label">0</div>
+                            </div>
+                            <div class="chart-x-axis">
+                                <div class="x-axis-label">Jul</div>
+                                <div class="x-axis-label">Aug</div>
+                                <div class="x-axis-label">Sep</div>
+                                <div class="x-axis-label">Oct</div>
+                                <div class="x-axis-label">Nov</div>
+                                <div class="x-axis-label">Dec</div>
+                                <div class="x-axis-label">Jan</div>
+                            </div> -->
+                            <canvas id="balanceChart" width="600" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Weekly Activity Chart
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('activityChart').getContext('2d');
+
+            const activityChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+                    datasets: [
+                        {
+                            label: 'Withdraw',
+                            data: [450, 350, 320, 470, 150, 350, 380],
+                            backgroundColor: '#2D60FF',
+                            borderRadius: 5,
+                            barPercentage: 0.5,
+                            categoryPercentage: 0.5
+                        },
+                        {
+                            label: 'Deposit',
+                            data: [220, 120, 250, 350, 250, 230, 320],
+                            backgroundColor: '#16DBCC',
+                            borderRadius: 5,
+                            barPercentage: 0.5,
+                            categoryPercentage: 0.5
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 500,
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#718EBF',
+                                font: {
+                                    size: 13
+                                }
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#718EBF',
+                                font: {
+                                    size: 13
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: '#343C6A',
+                            titleFont: {
+                                size: 14
+                            },
+                            bodyFont: {
+                                size: 14
+                            },
+                            padding: 15,
+                            cornerRadius: 10
+                        }
+                    }
+                }
+            });
+
+            // Contact selection functionality
+            const contacts = document.querySelectorAll('.contact');
+            contacts.forEach(contact => {
+                contact.addEventListener('click', function () {
+                    contacts.forEach(c => c.style.opacity = '0.5');
+                    this.style.opacity = '1';
+                });
+            });
+
+            // Send button functionality
+            const sendButton = document.querySelector('.send-button');
+            sendButton.addEventListener('click', function () {
+                const amountInput = document.querySelector('.amount-input');
+                const amount = amountInput.value;
+
+                if (amount && parseFloat(amount) > 0) {
+                    // Find selected contact
+                    let selectedContact = null;
+                    contacts.forEach(contact => {
+                        if (contact.style.opacity === '1') {
+                            selectedContact = contact.querySelector('.contact-name').textContent;
+                        }
+                    });
+
+                    if (selectedContact) {
+                        alert(`$${amount} sent to ${selectedContact} successfully!`);
+                        amountInput.value = '';
+                    } else {
+                        alert('Please select a contact first!');
+                    }
+                } else {
+                    alert('Please enter a valid amount!');
+                }
+            });
+
+            // See All functionality
+            const seeAll = document.querySelector('.see-all');
+            seeAll.addEventListener('click', function () {
+                alert('View all cards');
+            });
+
+            // Balance functions
+            document.addEventListener('DOMContentLoaded', function () {
+                const ctx = document.getElementById('balanceChart').getContext('2d');
+
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
+                        datasets: [{
+                            label: 'Balance',
+                            data: [150, 300, 480, 780, 240, 540, 660],
+                            borderColor: '#2D60FF',
+                            backgroundColor: 'rgba(45, 96, 255, 0.1)',
+                            fill: true,
+                            tension: 0.4,
+                            pointRadius: 0,
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true, // ubah ke true agar grafik muncul sesuai ukuran container
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 800,
+                                ticks: {
+                                    stepSize: 200,
+                                    color: '#718EBF',
+                                    font: { size: 12 }
+                                },
+                                grid: {
+                                    color: '#EDF0F5'
+                                }
+                            },
+                            x: {
+                                ticks: {
+                                    color: '#718EBF',
+                                    font: { size: 12 }
+                                },
+                                grid: {
+                                    display: false
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                backgroundColor: '#343C6A',
+                                titleFont: { size: 14 },
+                                bodyFont: { size: 14 },
+                                padding: 12,
+                                cornerRadius: 8
+                            }
+                        }
+                    }
+                });
+            });
+
+            // Next button in contacts
+            const nextButton = document.querySelector('.next-button');
+            nextButton.addEventListener('click', function () {
+                alert('More contacts available');
+            });
+        });
+    </script>
+    <script>
+        const burger = document.getElementById('burger');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+
+        burger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        overlay.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
+</body>
+
+</html>

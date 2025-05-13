@@ -1,0 +1,180 @@
+.content-wrapper {
+  padding: 30px 10px;
+}
+
+/* Loan Categories Styles */
+.loan-categories {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.loan-card {
+  background-color: #ffffff;
+  border-radius: 25px;
+  width: 240px;
+  height: 120px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.loan-icon-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-icon-bg {
+  background-color: #e7edff;
+}
+
+.corporate-icon-bg {
+  background-color: #fff5d9;
+}
+
+.business-icon-bg {
+  background-color: #ffe0eb;
+}
+
+.custom-icon-bg {
+  background-color: #dcfaf8;
+}
+
+.loan-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.loan-details {
+  margin-left: 15px;
+}
+
+.loan-type {
+  font-size: 16px;
+  font-weight: 400;
+  color: #718ebf;
+  line-height: 20px;
+}
+
+.loan-amount {
+  font-size: 20px;
+  font-weight: 600;
+  color: #232323;
+  line-height: 25px;
+  margin-top: 5px;
+}
+
+.custom-loan-amount {
+  font-size: 18px;
+  font-weight: 600;
+  color: #232323;
+  line-height: 22px;
+  margin-top: 10px;
+}
+
+/* Loans Overview Styles */
+.loans-overview-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333b69;
+  margin-bottom: 15px;
+}
+
+.loans-table {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.8fr 0.8fr 1.2fr 0.8fr;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6eff5;
+}
+
+.table-header-cell {
+  font-size: 16px;
+  font-weight: 500;
+  color: #718ebf;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.8fr 0.8fr 1.2fr 0.8fr;
+  padding: 15px 0;
+  border-bottom: 1px solid #f2f3f7;
+}
+
+.table-cell {
+  font-size: 16px;
+  font-weight: 400;
+  color: #232323;
+}
+
+.table-footer {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.8fr 0.8fr 1.2fr 0.8fr;
+  padding: 15px 0;
+  border-top: 1px solid #e6eff5;
+}
+
+.table-footer-cell {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fe5c73;
+}
+
+.repay-btn {
+  background-color: transparent;
+  border: 1px solid #232323;
+  border-radius: 17px;
+  padding: 7px 0;
+  width: 100px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #232323;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.repay-btn:hover {
+  background-color: #ffffff;
+  color: #1814F3;
+  border: 1px solid #1814F3;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .loan-categories {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .loan-card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .loan-card {
+    width: 100%;
+  }
+
+  .table-row,
+  .table-header,
+  .table-footer {
+    grid-template-columns: 0.5fr 1fr 1fr 0.8fr 0.8fr 1fr 0.5fr;
+    font-size: 14px;
+  }
+
+  .repay-btn {
+    width: 80px;
+    font-size: 14px;
+  }
+}

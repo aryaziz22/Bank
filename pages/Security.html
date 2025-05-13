@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankku - User Settings</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/settings.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="logo-container">
+                <img src="../assets/images/img_iconfindervector6509473792_1.png" alt="Bankku Logo" width="36"
+                    height="36">
+                <span class="logo-text">Bankku.</span>
+            </div>
+
+            <nav>
+                <div class="nav-item">
+                    <img src="../assets/images/dashboard2.png" alt="Dashboard Icon" width="25" height="25">
+                    <a class="nav-text" href="Dashboard.html">Dashboard</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_glyph.svg" alt="Transactions Icon" width="25" height="25">
+                    <a class="nav-text" href="Transactions.html">Transactions</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_user_3_1.svg" alt="Accounts Icon" width="25" height="25">
+                    <a class="nav-text" href="Accounts.html">Accounts</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_group_25x25.svg" alt="Investments Icon" width="25" height="25">
+                    <a class="nav-text" href="Investments.html">Investments</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_creditcard_1.svg" alt="Credit Cards Icon" width="26" height="26">
+                    <a class="nav-text" href="CreditCards.html">Credit Cards</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_loan_1.svg" alt="Loans Icon" width="25" height="25">
+                    <a class="nav-text" href="Loans.html">Loans</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_service_1.svg" alt="Services Icon" width="25" height="25">
+                    <a class="nav-text" href="Services.html">Services</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_econometrics_1.svg" alt="My Privileges Icon" width="25" height="25">
+                    <a class="nav-text" href="Privileges.html">My Privileges</a>
+                </div>
+
+                <div class="nav-item active">
+                    <img src="../assets/images/settings solid 1.png" alt="Setting Icon" width="25" height="25">
+                    <a class="nav-text" href="Setting.html">Setting</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <!-- Burger Menu -->
+                <div class="burger" id="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="overlay" id="overlay"></div>
+                <h1 class="page-title">Setting</h1>
+
+                <div class="search-bar">
+                    <img src="../assets/images/img_magnifyingglass_1.svg" alt="Search Icon" width="20" height="20">
+                    <input type="text" class="search-input" placeholder="Search for something">
+                </div>
+
+                <div class="user-actions">
+                    <button class="icon-button">
+                        <img src="../assets/images/img_group_3.svg" alt="Notifications" width="50" height="50">
+                    </button>
+                    <button class="icon-button">
+                        <img src="../assets/images/img_group_4.svg" alt="Settings" width="50" height="50">
+                    </button>
+                    <img src="../assets/images/img_pexelschristinamorillo1181690_1.png" alt="User Avatar"
+                        class="user-avatar">
+                </div>
+            </div>
+
+            <!-- Settings Content -->
+            <div class="settings-content">
+
+                <div class="settings-card">
+                    <div class="tabs">
+                        <a href="Setting.html" class="tab">Edit Profile</a>
+                        <a href="Preferense.html" class="tab">Preferences</a>
+                        <a href="Security.html" class="tab active">Security</a>
+                    </div>
+
+                    <div class="form-security">
+                        <!-- Two-factor Authentication Section -->
+                        <div class="notification-section">
+                            <p class="form-label">Two-factor Authentication</p>
+                            <div class="toggle-group">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggle-label">Enable or disable two factor authentication</span>
+                            </div>
+                        </div>
+
+                        <!-- Change Password Section -->
+                        <div class="notif-section">
+                            <p class="form-label">Change Password</p>
+
+                            <div class="form-group">
+                                <label class="form-label">Current Password</label>
+                                <input type="password" class="form-input" placeholder="Enter current password">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">New Password</label>
+                                <input type="password" class="form-input" placeholder="Enter new password">
+                            </div>
+
+                            <button class="save-btn">Save</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.tab');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                });
+            });
+
+            // Date dropdown functionality
+            const dateInput = document.querySelector('.date-input-container input');
+            dateInput.addEventListener('click', function () {
+                // In a real application, this would open a date picker
+                console.log('Date picker would open here');
+            });
+
+            // Save button functionality
+            const saveBtn = document.querySelector('.save-btn');
+            saveBtn.addEventListener('click', function () {
+                // In a real application, this would save the form data
+                alert('Profile information saved successfully!');
+            });
+
+            // Profile picture edit functionality
+            const editIcon = document.querySelector('.edit-icon');
+            editIcon.addEventListener('click', function () {
+                // In a real application, this would open a file picker
+                console.log('File picker would open here');
+            });
+
+            // Navigation item click functionality
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    // In a real application, this would navigate to the corresponding page
+                    const pageName = this.querySelector('.nav-text').textContent;
+                    console.log(`Navigating to ${pageName}`);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankku - Loans Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/loans.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="logo-container">
+                <img src="../assets/images/img_iconfindervector6509473792_1.png" alt="Bankku Logo" width="36"
+                    height="36">
+                <span class="logo-text">Bankku.</span>
+            </div>
+
+            <nav>
+                <div class="nav-item">
+                    <img src="../assets/images/dashboard2.png" alt="Dashboard Icon" width="25" height="25">
+                    <a class="nav-text" href="Dashboard.html">Dashboard</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_glyph.svg" alt="Transactions Icon" width="25" height="25">
+                    <a class="nav-text" href="Transactions.html">Transactions</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_user_3_1.svg" alt="Accounts Icon" width="25" height="25">
+                    <a class="nav-text" href="Accounts.html">Accounts</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_group_25x25.svg" alt="Investments Icon" width="25" height="25">
+                    <a class="nav-text" href="Investments.html">Investments</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_creditcard_1.svg" alt="Credit Cards Icon" width="26" height="26">
+                    <a class="nav-text" href="CreditCards.html">Credit Cards</a>
+                </div>
+
+                <div class="nav-item active">
+                    <img src="../assets/images/loans2.png" alt="Loans Icon" width="25" height="25">
+                    <a class="nav-text" href="Loans.html">Loans</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_service_1.svg" alt="Services Icon" width="25" height="25">
+                    <a class="nav-text" href="Services.html">Services</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_econometrics_1.svg" alt="My Privileges Icon" width="25" height="25">
+                    <a class="nav-text" href="Privileges.html">My Privileges</a>
+                </div>
+
+                <div class="nav-item">
+                    <img src="../assets/images/img_vector_25x25.svg" alt="Setting Icon" width="25" height="25">
+                    <a class="nav-text" href="Setting.html">Setting</a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <!-- Burger Menu -->
+                <div class="burger" id="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="overlay" id="overlay"></div>
+                <h1 class="page-title">Loans</h1>
+
+                <div class="search-bar">
+                    <img src="../assets/images/img_magnifyingglass_1.svg" alt="Search Icon" width="20" height="20">
+                    <input type="text" class="search-input" placeholder="Search for something">
+                </div>
+
+                <div class="user-actions">
+                    <button class="icon-button">
+                        <img src="../assets/images/img_group_3.svg" alt="Notifications" width="50" height="50">
+                    </button>
+                    <button class="icon-button">
+                        <img src="../assets/images/img_group_4.svg" alt="Settings" width="50" height="50">
+                    </button>
+                    <img src="../assets/images/img_pexelschristinamorillo1181690_1.png" alt="User Avatar"
+                        class="user-avatar">
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <!-- Loan Categories -->
+                <div class="loan-categories">
+                    <div class="loan-card">
+                        <div class="loan-icon-container personal-icon-bg">
+                            <img src="../assets/images/loan-user.png" alt="Personal Loans" class="loan-icon">
+                        </div>
+                        <div class="loan-details">
+                            <div class="loan-type">Personal Loans</div>
+                            <div class="loan-amount">$50,000</div>
+                        </div>
+                    </div>
+
+                    <div class="loan-card">
+                        <div class="loan-icon-container corporate-icon-bg">
+                            <img src="../assets/images/corporate.png" alt="Corporate Loans" class="loan-icon">
+                        </div>
+                        <div class="loan-details">
+                            <div class="loan-type">Corporate Loans</div>
+                            <div class="loan-amount">$100,000</div>
+                        </div>
+                    </div>
+
+                    <div class="loan-card">
+                        <div class="loan-icon-container business-icon-bg">
+                            <img src="../assets/images/bisnis-loan.png" alt="Business Loans" class="loan-icon">
+                        </div>
+                        <div class="loan-details">
+                            <div class="loan-type">Business Loans</div>
+                            <div class="loan-amount">$500,000</div>
+                        </div>
+                    </div>
+
+                    <div class="loan-card">
+                        <div class="loan-icon-container custom-icon-bg">
+                            <img src="../assets/images/custom-loan.png" alt="Custom Loans" class="loan-icon">
+                        </div>
+                        <div class="loan-details">
+                            <div class="loan-type">Custom Loans</div>
+                            <div class="custom-loan-amount">Choose Money</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loans Overview -->
+                <h2 class="loans-overview-title">Active Loans Overview</h2>
+                <div class="loans-table">
+                    <div class="table-header">
+                        <div class="table-header-cell">SL No</div>
+                        <div class="table-header-cell">Loan Money</div>
+                        <div class="table-header-cell">Left to repay</div>
+                        <div class="table-header-cell">Duration</div>
+                        <div class="table-header-cell">Interest rate</div>
+                        <div class="table-header-cell">Installment</div>
+                        <div class="table-header-cell">Repay</div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">01.</div>
+                        <div class="table-cell">$100,000</div>
+                        <div class="table-cell">$40,500</div>
+                        <div class="table-cell">8 Months</div>
+                        <div class="table-cell">12%</div>
+                        <div class="table-cell">$2,000 / month</div>
+                        <div class="table-cell">
+                            <button class="repay-btn">Repay</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">02.</div>
+                        <div class="table-cell">$500,000</div>
+                        <div class="table-cell">$250,000</div>
+                        <div class="table-cell">36 Months</div>
+                        <div class="table-cell">10%</div>
+                        <div class="table-cell">$8,000 / month</div>
+                        <div class="table-cell">
+                            <button class="repay-btn">Repay</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">03.</div>
+                        <div class="table-cell">$900,000</div>
+                        <div class="table-cell">$40,500</div>
+                        <div class="table-cell">12 Months</div>
+                        <div class="table-cell">12%</div>
+                        <div class="table-cell">$5,000 / month</div>
+                        <div class="table-cell">
+                            <button class="repay-btn">Repay</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">04.</div>
+                        <div class="table-cell">$50,000</div>
+                        <div class="table-cell">$40,500</div>
+                        <div class="table-cell">25 Months</div>
+                        <div class="table-cell">5%</div>
+                        <div class="table-cell">$2,000 / month</div>
+                        <div class="table-cell">
+                            <button class="repay-btn">Repay</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">05.</div>
+                        <div class="table-cell">$50,000</div>
+                        <div class="table-cell">$40,500</div>
+                        <div class="table-cell">5 Months</div>
+                        <div class="table-cell">16%</div>
+                        <div class="table-cell">$10,000 / month</div>
+                        <div class="table-cell">
+                            <button class="repay-btn">Repay</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">06.</div>
+                        <div class="table-cell">$80,000</div>
+                        <div class="table-cell">$25,500</div>
+                        <div class="table-cell">14 Months</div>
+                        <div class="table-cell">8%</div>
+                        <div class="table-cell">$2,000 / month</div>
+                        <div class="table-cell">
+                            <button class="repay-btn">Repay</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">07.</div>
+                        <div class="table-cell">$12,000</div>
+                        <div class="table-cell">$5,500</div>
+                        <div class="table-cell">9 Months</div>
+                        <div class="table-cell">13%</div>
+                        <div class="table-cell">$500 / month</div>
+                        <div class="table-cell">
+                            <button class="repay-btn">Repay</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-cell">08.</div>
+                        <div class="table-cell">$160,000</div>
+                        <div class="table-cell">$100,800</div>
+                        <div class="table-cell">3 Months</div>
+                        <div class="table-cell">12%</div>
+                        <div class="table-cell">$900 / month</div>
+                        <div class="table-cell">
+                            <button class="repay-btn">Repay</button>
+                        </div>
+                    </div>
+
+                    <div class="table-footer">
+                        <div class="table-footer-cell">Total</div>
+                        <div class="table-footer-cell">$125,0000</div>
+                        <div class="table-footer-cell">$750,000</div>
+                        <div class="table-footer-cell"></div>
+                        <div class="table-footer-cell"></div>
+                        <div class="table-footer-cell">$50,000 / month</div>
+                        <div class="table-footer-cell"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Make repay buttons interactive
+        document.addEventListener('DOMContentLoaded', function () {
+            const repayButtons = document.querySelectorAll('.repay-btn');
+
+            repayButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // Show payment confirmation dialog
+                    const row = this.closest('.table-row');
+                    const loanAmount = row.querySelector('.table-cell:nth-child(2)').textContent;
+                    const remainingAmount = row.querySelector('.table-cell:nth-child(3)').textContent;
+
+                    if (confirm(`Do you want to make a payment for this loan?
+
+Loan Amount: ${loanAmount}
+Remaining: ${remainingAmount}`)) {
+                        // Simulate payment processing
+                        button.textContent = 'Processing...';
+
+                        setTimeout(() => {
+                            button.textContent = 'Paid';
+                            button.style.backgroundColor = '#1814f3';
+                            button.style.color = '#ffffff';
+                            button.disabled = true;
+
+                            // Update the remaining amount (just for demo)
+                            const installment = row.querySelector('.table-cell:nth-child(6)').textContent;
+                            const installmentAmount = parseFloat(installment.replace('$', '').split(' ')[0].replace(',', ''));
+                            const remaining = parseFloat(remainingAmount.replace('$', '').replace(',', ''));
+                            const newRemaining = remaining - installmentAmount;
+
+                            if (newRemaining <= 0) {
+                                row.querySelector('.table-cell:nth-child(3)').textContent = '$0';
+                                alert('Congratulations! This loan has been fully repaid.');
+                            } else {
+                                row.querySelector('.table-cell:nth-child(3)').textContent = '$' + newRemaining.toLocaleString();
+                            }
+                        }, 2000);
+                    }
+                });
+            });
+
+            // Make search bar functional
+            const searchInput = document.querySelector('.search-input');
+
+            searchInput.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    alert(`Searching for: ${this.value}`);
+                    this.value = '';
+                }
+            });
+
+            // Make notification and settings icons interactive
+            document.querySelector('.notification-icon').addEventListener('click', function () {
+                alert('Notifications panel opened');
+            });
+
+            document.querySelector('.settings-icon').addEventListener('click', function () {
+                alert('Settings panel opened');
+            });
+
+            // Make profile image interactive
+            document.querySelector('.profile-img').addEventListener('click', function () {
+                alert('Profile menu opened');
+            });
+
+            // Make loan category cards interactive
+            const loanCards = document.querySelectorAll('.loan-card');
+
+            loanCards.forEach(card => {
+                card.addEventListener('click', function () {
+                    const loanType = this.querySelector('.loan-type').textContent;
+                    alert(`Viewing ${loanType} details`);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
